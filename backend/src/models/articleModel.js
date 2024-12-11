@@ -63,4 +63,29 @@ const createArticle = async (dataArticle) => {
     }
 }
 
-export default { getAllArticles, createArticle }
+const getArticleById = async (id) => {
+  try {
+    return await Article.findById(id);
+  } catch (error) {
+    throw new Error(`Error fetching article by ID: ${error.message}`);
+  }
+};
+
+const updateArticle = async (id, data) => {
+  try {
+    return await Article.findByIdAndUpdate(id, data, { new: true });
+  } catch (error) {
+    throw new Error(`Error updating article: ${error.message}`);
+  }
+};
+
+const deleteArticle = async (id) => {
+  try {
+    return await Article.findByIdAndDelete(id);
+  } catch (error) {
+    throw new Error(`Error deleting article: ${error.message}`);
+  }
+};
+
+
+export default { Article, getAllArticles, createArticle, getArticleById, updateArticle, deleteArticle }
