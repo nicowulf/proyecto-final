@@ -1,4 +1,8 @@
-import mongoose from "mongooses"
+import mongoose from "mongoose"
+import dotenv from "dotenv"
+
+dotenv.config()
+
 process.loadEnvFile()
 
 const URI_DB = process.env.URI_DB
