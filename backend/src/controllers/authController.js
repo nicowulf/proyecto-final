@@ -1,4 +1,4 @@
-import AuthModel from "../models/authModel.js";
+import authModel from "../models/authModel.js";
 import jwt from "jsonwebtoken";
 
 process.loadEnvFile();

@@ -42,7 +42,6 @@ CRUD de Artículos: Permite crear, leer, actualizar y eliminar artículos.
 Autenticación: Requiere autenticación JWT para acceder a los recursos protegidos.
 Gestión de Usuarios: Permite el registro y el inicio de sesión de usuarios.
 Búsqueda de Artículos: Permite buscar artículos por ID.
-Permisos de Usuario:
 Usuarios Registrados: Pueden crear, editar y eliminar sus propios artículos.
 Roles Futuras: Se puede implementar un sistema de roles para otorgar permisos más granulares (ej: administradores, colaboradores).
 

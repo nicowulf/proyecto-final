@@ -11,9 +11,8 @@ const articleSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    authorId: {
-      type: Schema.Types.ObjectId,
-      ref: "User", // Supone que tienes un modelo llamado 'User' para los autores
+    author: {
+      type: String,
       required: true,
     },
     tags: {
