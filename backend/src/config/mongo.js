@@ -5,7 +5,7 @@ dotenv.config()
 
 process.loadEnvFile()
 
-const URI_DB = process.env.URI_DB
+const URI_DB = process.env.URI_DB || ""
 
 const connectDB = async () => {
     try {
